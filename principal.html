@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Beranda - Netflix</title>
+    <link rel="shortcut icon" href="img/Logo-site.png">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="media.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600&display=swap" rel="stylesheet">
+    <script type="text/javascript" src="script.js" defer></script>
+</head>
+
+<body>
+
+<!-- BAGIAN ATAS HALAMAN, HEADER BERISI: LOGO/BERANDA/SERIES/FILM/(DAFTAR SAYA - HANYA DI PC) DAN SEMUA LINK MENGARAH KE HALAMAN UTAMA -->
+
+    <header class="cabecario">
+        <ul class="cabecario__lista">
+            <li><img src="img/Nlogo.png" alt="Logo Netflix" class="nlogo"><img src="img/Netflix_logo.png" alt="Logo Netflix" class="cabecario__item container__logo sumir__mobile"></li>
+            <li class="cabecario__item"><a href="principal.html" class="cabecario__link">Beranda</a></li>
+            <li class="cabecario__item"><a href="principal.html" class="cabecario__link">Series</a></li>
+            <li class="cabecario__item"><a href="principal.html" class="cabecario__link">Film</a></li>
+            <li class="cabecario__item mobile__sumir"><a href="principal.html" class="cabecario__link">Daftar Saya</a></li>
+        </ul>
+    </header>
+
+<!-- FILM YANG SEDANG TAYANG DENGAN BACKGROUND FILM (DI PONSEL BACKGROUND BERBEDA) DILENGKAPI TOMBOL UNTUK MENONTON DAN (LEBIH BANYAK INFORMASI - BELUM BERFUNGSI, AKAN BERFUNGSI DI MASA DEPAN) -->
+
+<section class="container__background">
+    <img src="img/Titulo.png" alt="Judul" class="container__titulo">
+    <p class="container__texto__mobile">Film Romantis yang diakui oleh<br> kritikus, dengan rekor penjualan<br> tiket, dianggap sebagai salah satu<br> film romansa terbaik.</p>
+    <p class="container__texto mobile__sumir">Ikuti kisah dua remaja Kuliah<br> dan semua momen mereka bersama. Film ini<br> dibintangi oleh Ismet dan Rifa.</p>
+    <div class="container__botao">
+        <a href="filme5.html" class="botao__assistir"><img src="img/Play.png" class="play">Tonton</a> 
+        <button class="botao__assistir info"><img src="img/info.png" class="play"><p class="mais__info">Lebih Banyak Informasi</p></button>    
+    </div>
+</section>
+
+<!-- BAGIAN FILM YANG SUDAH DITONTON (FILM DITAMBAHKAN SECARA MANUAL) -->
+
+    <section class="container">
+        <p class="container__texto">Tonton Lagi</p>
+        <ul class="container__lista">
+            
+            <li class="container__video">
+                <a href="filme1.html">
+                    <img src="img/video1.png" alt="Video" class="cropped">
+                    <div class="desc">Rindu di Antara Semester</div>
+                </a>
+            </li>
+
+            <li class="container__video">
+                <a href="filme2.html">
+                    <img src="img/video2.png" alt="Video" class="cropped">
+                    <div class="desc">Psikopat Luragung</div>
+                </a>
+            </li>
+
+            <li class="container__video">
+                <a href="filme3.html">
+                    <img src="img/video3.png" alt="Video" class="cropped">
+                    <div class="desc">Cinta Semester Akhir</div>
+                </a>
+            </li>
+
+            <li class="container__video">
+                <a href="filme4.html">
+                    <img src="img/video4.png" alt="Video" class="cropped">
+                    <div class="desc">Sebelah Layar</div>
+                </a>
+            </li>
+        </ul>
+    </section>
+
+<!-- BAGIAN DAFTAR FILM SAYA (FILM DITAMBAHKAN SECARA MANUAL) -->
+
+    <section class="container">
+        <p class="container__texto">Daftar Saya</p>
+        <ul class="container__lista">
+
+            <li class="container__video">
+                <a href="filme5.html">
+                    <img src="img/video5.png" alt="Video" class="cropped">
+                    <div class="desc">Cinta Pertama</div>
+                </a>
+            </li>
+
+            <li class="container__video">
+                <a href="filme4.html">
+                    <img src="img/video4.png" alt="Video" class="cropped">
+                    <div class="desc">Sebelah Layar</div>
+                </a>
+            </li>
+
+            <li class="container__video">
+                <a href="filme2.html">
+                    <img src="img/video2.png" alt="Video" class="cropped">
+                    <div class="desc">Psikopat Luragung</div>
+                </a>
+            </li>
+
+        </ul>
+    </section>
+
+<!-- BAGIAN SEMUA FILM (FILM DITAMBAHKAN SECARA MANUAL) -->
+
+    <section class="container">
+        <p class="container__texto">Semua Film</p>
+
+        <div id="carrosel">
+        <button type="button" id="btnleft"><img src="img/Carrosel-setae.png" alt="panah" class="botao__seta"></button>
+        <button type="button" id="btnright"><img src="img/Carrosel-setad.png" alt="panah" class="botao__seta"></button>
+
+        <div class="container__lista" id="container">
+
+            <div class="container__video carrossel_item">
+                <a href="filme1.html">
+                    <img src="img/video1.png" alt="Video" class="cropped">
+                    <div class="desc">Rindu di Antara Semester</div>
+                </a>
+            </div>
+
+            <div class="container__video carrossel_item">
+                <a href="filme2.html">
+                    <img src="img/video2.png" alt="Video" class="cropped">
+                    <div class="desc">Psikopat Luragung</div>
+                </a>
+            </div>
+
+            <div class="container__video carrossel_item">
+                <a href="filme3.html">
+                    <img src="img/video3.png" alt="Video" class="cropped">
+                    <div class="desc">Cinta Semester Akhir</div>
+                </a>
+            </div>
+
+            <div class="container__video carrossel_item">
+                <a href="filme4.html">
+                    <img src="img/video4.png" alt="Video" class="cropped">
+                    <div class="desc">Klub Pertarungan</div>
+                </a>
+            </div>
+
+            <div class="container__video carrossel_item">
+                <a href="filme5.html">
+                    <img src="img/video5.png" alt="Video" class="cropped">
+                    <div class="desc">Cinta Pertama</div>
+                </a>
+            </div>
+
+            <div id="limitador">Batas</div>
+        </div>
+        </div>
+
+    </section>
+
+<!-- BAGIAN FOOTER HALAMAN -->
+
+    <footer class="rodape">
+        <h2 class="rodape__texto">Created by Ismet Ganteng</h2> 
+    </footer>
+</body>
+</html>
